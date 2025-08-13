@@ -10,6 +10,7 @@
     quick-tap-ms = <150>;
 };
 
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -21,6 +22,19 @@
         };
     };
 
+behaviors {
+u_mt: u_mt {
+    compatible = "zmk,behavior-hold-tap";
+    label = "u_mt";
+    #binding-cells = <2>;
+    tapping_term_ms = <300>;      // 增加判定时间
+    quick_tap_ms = <200>;         // 快速轻触保护
+    global-quick-tap;             // 全局保护
+    flavor = "tap-preferred";
+    bindings = <&kp>, <&kp>;
+};
+};
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -28,7 +42,7 @@
             bindings = <
 &kp TAB         &kp Q    &kp W   &kp E           &kp R         &kp T             &kp Y           &kp U            &kp I      &kp O      &kp P        &lt 3 ESC
 &kp TAB         &kp Q    &kp W   &kp E           &kp R         &kp T             &kp Y           &kp U            &kp I      &kp O      &kp P        &lt 3 ESC
-&kp CAPS        &kp A    &kp S   &kp D           &kp F         &mt LCTRL G       &mt LCTRL H     &kp J            &kp K      &kp L      &kp ENTER    &kp LEFT_WIN
+&kp CAPS        &kp A    &kp S   &kp D           &kp F         &u_mt LCTRL G     &u_mt LCTRL H   &kp J            &kp K      &kp L      &kp ENTER    &kp LEFT_WIN
 &kp LSHIFT      &kp Z    &kp X   &kp C           &kp V         &kp B             &kp N           &kp M            &kp COMMA  &kp DOT    &kp RSHIFT   &kp RIGHT_ALT
                                  &kp SPACE       &kp F13       &kp F14           &kp F15         &kp F16
                                  &none         &none          &trans
