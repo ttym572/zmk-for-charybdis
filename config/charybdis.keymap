@@ -43,8 +43,8 @@ u_mt: u_mt {
 &kp TAB         &kp Q    &kp W   &kp E           &kp R         &kp T             &kp Y           &kp U            &kp I      &kp O      &kp P        &lt 3 ESC
 &kp TAB         &kp Q    &kp W   &kp E           &kp R         &kp T             &kp Y           &kp U            &kp I      &kp O      &kp P        &lt 3 ESC
 &kp CAPS        &kp A    &kp S   &kp D           &kp F         &u_mt LCTRL G     &u_mt LCTRL H   &kp J            &kp K      &kp L      &kp ENTER    &kp LEFT_WIN
-&kp LSHIFT      &kp Z    &kp X   &kp C           &kp V         &kp B             &kp N           &kp M            &kp COMMA  &kp DOT    &kp RSHIFT   &kp K_CONTEXT_MENU
-                                 &kp SPACE       &kp F13       &kp LEFT_ALT      &kp F15         &kp RIGHT_ALT
+&kp LSHIFT      &kp Z    &kp X   &kp C           &kp V         &kp B             &kp N           &kp M            &kp COMMA  &kp DOT    &kp RSHIFT   &kp F15
+                                 &kp SPACE       &kp F13       &kp LEFT_ALT      &kp F14         &kp RIGHT_ALT
                                  &none         &none          &trans
             >;
 
