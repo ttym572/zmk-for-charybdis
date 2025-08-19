@@ -33,6 +33,17 @@ u_mt: u_mt {
     flavor = "tap-preferred";
     bindings = <&kp>, <&kp>;
 };
+u_lt: u_lt {
+    compatible = "zmk,behavior-hold-tap";
+    label = "u_lt";
+    #binding-cells = <2>;
+    tapping_term_ms = <300>;      // 增加判定时间
+    quick_tap_ms = <200>;         // 快速轻触保护
+    global-quick-tap;             // 全局保护
+    flavor = "tap-preferred";
+    bindings = <&mo>, <&kp>;      // 长按=层切换, 轻触=按键
+};
+
 };
 
     keymap {
@@ -40,12 +51,12 @@ u_mt: u_mt {
 
         Base {
             bindings = <
-&kp TAB         &kp Q    &kp W   &kp E           &kp R         &kp T             &kp Y           &kp U            &kp I      &kp O      &kp P        &lt 3 ESC
-&kp TAB         &kp Q    &kp W   &kp E           &kp R         &kp T             &kp Y           &kp U            &kp I      &kp O      &kp P        &lt 3 ESC
-&kp CAPS        &kp A    &kp S   &kp D           &kp F         &u_mt LCTRL G     &u_mt LCTRL H   &kp J            &kp K      &kp L      &kp ENTER    &kp LEFT_WIN
-&kp LSHIFT      &kp Z    &kp X   &kp C           &kp V         &kp B             &kp N           &kp M            &kp COMMA  &kp DOT    &kp RSHIFT   &kp F15
-                                 &kp SPACE       &kp F13       &kp LEFT_ALT      &kp F14         &kp RIGHT_ALT
-                                 &none         &none          &trans
+&kp TAB         &kp Q    &kp W         &kp E           &kp R         &kp T             &kp Y           &kp U            &kp I      &kp O      &kp P        &lt 3 ESC
+&kp TAB         &kp Q    &u_mt F15 W   &kp E           &kp R         &kp T             &kp Y           &kp U            &kp I      &kp O      &kp P        &lt 3 ESC
+&kp CAPS        &kp A    &kp S         &kp D           &kp F         &u_mt LCTRL G     &u_mt LCTRL H   &u_lt 1 J        &kp K      &kp L      &kp ENTER    &kp LEFT_WIN
+&kp LSHIFT      &kp Z    &kp X         &kp C           &kp V         &kp B             &kp N           &kp M            &kp COMMA  &kp DOT    &kp RSHIFT   &kp F15
+                                       &kp SPACE       &kp F13       &kp LEFT_ALT      &kp F14         &kp RIGHT_ALT
+                                       &none           &none         &trans
             >;
 
             trackball-bindings = <&tmv_coarse>;
@@ -53,12 +64,12 @@ u_mt: u_mt {
 
         layer_1 {
             bindings = <
-&kp TILDE         &kp EXCLAMATION  &kp HASH      &kp DOLLAR    &kp DOLLAR    &kp PERCENT    &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE
-&kp GRAVE         &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp LBKT       &kp RBKT   &kp F1         &kp F2        &kp F3                &kp F4                 &kp DEL
-&kp LEFT_CONTROL  &kp NUMBER_5     &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &none          &kp BSLH   &kp F5         &kp F6        &kp F7                &kp F8                 &kp PAGE_UP
-&kp LSHFT         &kp NUMBER_9     &kp NUMBER_0  &kp MINUS     &kp EQUAL     &none          &trans     &kp F9         &kp F10       &kp F11               &kp F12                &kp PAGE_DOWN
-                                                 &kp LEFT_WIN  &kp SPACE     &trans         &kp ENTER  &kp BACKSPACE
-                                                               &none         &none          &trans
+&none         &none     &none         &none         &none         &none        &none   &none  &none  &none  &none  &none
+&none         &none     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none        &none   &none  &none  &none  &none  &none
+&none         &none     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_0 &none   &none  &none  &none  &none  &none
+&kp LSHFT     &none     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp DOT      &none   &none  &none  &none  &none  &none
+                                      &none         &none         &none        &none   &none  
+                                      &none         &none         &none
             >;
         };
 
