@@ -22,13 +22,12 @@ macros {
             bindings = <&kp LSHIFT>, <&kp LEFT>, <&kp LSHIFT>; // 按下Shift，按左箭头，释放Shift
         };
 
-        // 向右选择一个字符
         sel_right: sel_right {
             label = "SEL_RIGHT";
             #binding-cells = <0>;
             bindings = <&kp LSHIFT>, <&kp RIGHT>, <&kp LSHIFT>;
         };
-    };
+    
         sel_up: sel_up {
             label = "SEL_UP";
             #binding-cells = <0>;
@@ -39,7 +38,7 @@ macros {
             #binding-cells = <0>;
             bindings = <&kp LSHIFT>, <&kp DOWN>, <&kp LSHIFT>;
         };
-
+      };
 
 behaviors {
 u_mt: u_mt {
