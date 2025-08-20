@@ -168,7 +168,7 @@ sll: sll {
 &none        &none         &none         &none            &none          &none         &none       &none      &none         &none         &none         &none
 &none        &kp PIPE      &kp LPAR      &kp RPAR         &kp BSLH       &kp EXCL      &none       &none      &none         &none         &none         &none
 &none        &kp COLON     &kp DQT       &kp AT           &kp SEMI       &kp QMARK     &none       &none      &none         &none         &none        &none
-&kp LSHFT    &kp KP_PLUS   &kp KP_MINUS  &kp KP_MULTIPLY  &kp KP_DIVIDE  &kp KP_EQUAL  &none       &none      &none         &none         &none        &none
+&kp LSHFT    &kp KP_PLUS   &kp KP_MINUS  &kp KP_MULTIPLY  &kp KP_DIVIDE  &kp EQUAL     &none       &none      &none         &none         &none        &none
                                          &none         &none         &none        &none   &none  
                                          &none         &none         &none
             >;
