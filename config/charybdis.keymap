@@ -131,7 +131,7 @@ sll: sll {
             bindings = <
 &kp TAB         &kp Q    &kp W         &kp E           &kp R         &kp T             &kp Y           &kp U            &kp I      &kp O      &kp P        &lt 4 ESC
 &kp TAB         &kp Q    &u_mt F15 W   &kp E           &kp R         &kp T             &kp Y           &u_lt 4 U        &kp I      &kp O      &kp P        &lt 4 ESC
-&kp CAPS        &kp A    &kp S         &kp D           &kp F         &u_mt LCTRL G     &u_mt LCTRL H   &u_lt 1 J        &kp K      &kp L      &kp ENTER    &kp LEFT_WIN
+&kp CAPS        &kp A    &kp S         &kp D           &u_lt 4 F     &u_mt LCTRL G     &u_mt LCTRL H   &u_lt 1 J        &kp K      &kp L      &kp ENTER    &kp LEFT_WIN
 &kp LSHIFT      &kp Z    &kp X         &kp C           &kp V         &kp B             &kp N           &kp M            &kp COMMA  &kp DOT    &kp RSHIFT   &kp F15
                                        &kp SPACE       &kp F13       &kp LEFT_ALT      &kp F14         &kp RIGHT_ALT
                                        &none           &none         &trans
@@ -145,7 +145,7 @@ sll: sll {
 
 &kp F12           &kp F1      &kp F2      &kp F3         &kp F4         &kp F5          &kp F6        &kp F7         &kp F8    &kp F9     &kp F10     &kp F11
 &none             &sel_up     &kp HOME    &kp UP         &kp END        &sel_down       &none         &none          &trans    &none      &none       &none
-&none             &sel_left   &kp LEFT    &kp DOWN       &kp RIGHT      &sel_right      &none         &none          &mo 2     &mo3      &none       &none
+&none             &sel_left   &kp LEFT    &kp DOWN       &kp RIGHT      &sel_right      &none         &none          &mo 2     &mo 3      &none       &none
 &kp LEFT_SHIFT    &sls        &sll        &kp DEL        &kp BSPC       &sle            &none         &none          &none     &none      &kp RSHIFT  &none
                                           &none          &none          &none           &none         &none  
                                                          &trans         &trans          &none
@@ -176,10 +176,10 @@ sll: sll {
 
         layer_4 {
             bindings = <
-&none         &none     &none         &none      &none      &none        &none   &none  &none  &none  &none  &none
-&none         &none     &kp F1        &kp F2     &kp F3     &kp F12      &none   &none  &none  &none  &none  &none
-&none         &none     &kp F4        &kp F5     &kp F6     &kp F11      &none   &none  &none  &none  &none  &none
-&kp LSHFT     &none     &kp F7        &kp F8     &kp F9     &kp F10      &none   &none  &none  &none  &none  &none
+&none         &none     &none         &none      &none      &none        &none   &none   &none    &none   &none  &none
+&none         &none     &kp F1        &kp F2     &kp F3     &kp F12      &kp F20 &kp F21 &kp F22  &kp F23 &none  &none
+&none         &none     &kp F4        &kp F5     &kp F6     &kp F11      &kp F16 &kp F17 &kp F18  &kp F19 &none  &none
+&kp LSHFT     &none     &kp F7        &kp F8     &kp F9     &kp F10      &none   &none   &none    &none   &none  &none
                                       &none      &none      &none        &none   &none  
                                       &none      &none      &none
             >;
