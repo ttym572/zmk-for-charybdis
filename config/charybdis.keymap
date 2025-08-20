@@ -15,7 +15,6 @@
         };
     };
 macros {
-        // 向左选择一个字符
         sel_left: sel_left {
             label = "SEL_LEFT";
             #binding-cells = <0>;
@@ -84,8 +83,8 @@ u_lt: u_lt {
             bindings = <
 
 &kp F12           &kp F1      &kp F2      &kp F3         &kp F4         &kp F5          &kp F6        &kp F7         &kp F8    &kp F9     &kp F10  &kp F11
-&kp LS(GRAVE)     &sel_up     &kp home    &kp up         &kp end        &sel_down       &none         &none          &trans    &none      &none    &kp LEFT_WIN
-&kp LEFT_CONTROL  &sel_left   &kp left    &kp down       &kp right      &sel_right      &none         &trans         &mo 2     &trans     &trans   &kp K_CONTEXT_MENU
+&kp LS(GRAVE)     &sel_up     &kp HOME    &kp UP         &kp END        &sel_DOWN       &none         &none          &trans    &none      &none    &kp LEFT_WIN
+&kp LEFT_CONTROL  &sel_left   &kp LEFT    &kp DOWN       &kp RIGHT      &sel_right      &none         &trans         &mo 2     &trans     &trans   &kp K_CONTEXT_MENU
 &kp LEFT_SHIFT    &kp LS(N9)  &kp LS(N0)  &kp LS(MINUS)  &kp LS(EQUAL)  &none           &none         &kp LEFT       &kp DOWN  &kp RIGHT  &kp DOT  &kp RIGHT_ALT
                                           &kp LEFT_ALT   &kp SPACE      &kp ENTER       &kp CAPS      &kp BACKSPACE
                                                          &trans         &trans          &none
