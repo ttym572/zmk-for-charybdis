@@ -37,28 +37,48 @@ u_lt: u_lt {
     bindings = <&mo>, <&kp>;      // 长按=层切换, 轻触=按键
 };
 sel_left: sel_left {
-    compatible = "zmk,behavior-macro";
-    label = "SEL_LEFT";
-    #binding-cells = <0>;
-    bindings = <&kp LSHIFT>, <&kp LEFT>, <&kp LSHIFT>;
+            compatible = "zmk,behavior-macro";
+            label = "SEL_LEFT";
+            #binding-cells = <0>;
+            tap-ms = <5>;
+            wait-ms = <5>;
+            bindings = 
+                <&macro_press &kp LSHIFT>,
+                <&macro_tap &kp LEFT>,
+                <&macro_release &kp LSHIFT>;
     };
 sel_right: sel_right {
-    compatible = "zmk,behavior-macro";
-    label = "SEL_RIGHT";
-    #binding-cells = <0>;
-    bindings = <&kp LSHIFT>, <&kp RIGHT>, <&kp LSHIFT>;
+            compatible = "zmk,behavior-macro";
+            label = "SEL_RIGHT";
+            #binding-cells = <0>;
+            tap-ms = <5>;
+            wait-ms = <5>;
+            bindings = 
+                <&macro_press &kp LSHIFT>,
+                <&macro_tap &kp RIGHT>,
+                <&macro_release &kp LSHIFT>;
     };
 sel_up: sel_up {
-    compatible = "zmk,behavior-macro";
-    label = "SEL_UP";
-    #binding-cells = <0>;
-    bindings = <&kp LSHIFT>, <&kp UP>, <&kp LSHIFT>;
+            compatible = "zmk,behavior-macro";
+            label = "SEL_UP";
+            #binding-cells = <0>;
+            tap-ms = <5>;
+            wait-ms = <5>;
+            bindings = 
+                <&macro_press &kp LSHIFT>,
+                <&macro_tap &kp UP>,
+                <&macro_release &kp LSHIFT>;
     };
 sel_down: sel_down {
-    compatible = "zmk,behavior-macro";
-    label = "SEL_DOWN";
-    #binding-cells = <0>;
-    bindings = <&kp LSHIFT>, <&kp DOWN>, <&kp LSHIFT>;
+            compatible = "zmk,behavior-macro";
+            label = "SEL_DOWN";
+            #binding-cells = <0>;
+            tap-ms = <5>;
+            wait-ms = <5>;
+            bindings = 
+                <&macro_press &kp LSHIFT>,
+                <&macro_tap &kp DOWN>,
+                <&macro_release &kp LSHIFT>;
     };
 
 
