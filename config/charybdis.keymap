@@ -54,7 +54,7 @@ sel_up: sel_up {
     #binding-cells = <0>;
     bindings = <&kp LSHIFT>, <&kp UP>, <&kp LSHIFT>;
     };
-sel_left: sel_down {
+sel_down: sel_down {
     compatible = "zmk,behavior-macro";
     label = "SEL_DOWN";
     #binding-cells = <0>;
