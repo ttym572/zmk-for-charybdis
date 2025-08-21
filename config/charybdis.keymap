@@ -16,30 +16,6 @@
     };
 
 behaviors {
-        // 纯净左键点击 - 无移动
-        mlclk: mlclk {
-            compatible = "zmk,behavior-mouse-button";
-            label = "MLCLK";
-            #binding-cells = <0>;
-            button = <0>;
-            move-step = <0>; // 关键：移动步长为0
-        };
-        // 纯净右键点击 - 无移动
-        mrclk: mrclk {
-            compatible = "zmk,behavior-mouse-button";
-            label = "MRCLK";
-            #binding-cells = <0>;
-            button = <1>;
-            move-step = <0>; // 关键：移动步长为0
-        };
-        // 纯净中键点击 - 无移动
-        mmclk: mmclk {
-            compatible = "zmk,behavior-mouse-button";
-            label = "MMCLK";
-            #binding-cells = <0>;
-            button = <2>;
-            move-step = <0>; // 关键：移动步长为0
-        };
 u_mt: u_mt {
     compatible = "zmk,behavior-hold-tap";
     label = "u_mt";
@@ -155,7 +131,7 @@ sll: sll {
             bindings = <
 &kp TAB         &kp Q    &kp W         &kp E           &kp R         &kp T             &kp Y           &kp U            &kp I      &kp O      &kp P        &lt 4 ESC
 &kp TAB         &kp Q    &u_mt F15 W   &kp E           &kp R         &kp T             &kp Y           &u_lt 4 U        &kp I      &kp O      &kp P        &lt 4 ESC
-&kp CAPS        &kp A    &kp S         &kp D           &u_lt 4 F     &u_mt LCTRL G     &u_mt LCTRL H   &u_lt 1 J        &kp K      &kp L      &kp ENTER    &kp LEFT_WIN
+&kp CAPS        &kp A    &kp S         &kp D           &u_lt 4 F     &u_mt LCTRL G     &u_mt LCTRL H   &u_lt 1 J        &u_lt 2 K  &u_lt 3 L  &kp ENTER    &kp LEFT_WIN
 &kp LSHIFT      &kp Z    &kp X         &kp C           &kp V         &kp B             &kp N           &kp M            &kp COMMA  &kp DOT    &kp RSHIFT   &kp F15
                                        &kp SPACE       &kp F13       &kp LEFT_ALT      &kp F14         &kp RIGHT_ALT
                                        &none           &none         &trans
@@ -204,7 +180,7 @@ sll: sll {
 &none         &none     &kp F1        &kp F2     &kp F3     &kp F12      &kp F20 &kp F21 &kp F22  &kp F23 &none  &none
 &none         &none     &kp F4        &kp F5     &kp F6     &kp F11      &kp F16 &kp F17 &kp F18  &kp F19 &none  &none
 &kp LSHFT     &none     &kp F7        &kp F8     &kp F9     &kp F10      &none   &none   &none    &none   &none  &none
-                                      &none      &mlclk     &mrclk        &none   &none  
+                                      &mo 5      &mkp LCLK  &mkp RCLK    &mkp LCLK  &mkp RCLK
                                       &none      &none      &none
             >;
         };
