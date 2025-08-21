@@ -40,7 +40,7 @@ behaviors {
             #binding-cells = <0>;
             button = <2>;
             move-step = <0>; // 关键：移动步长为0
-        }
+        };
 u_mt: u_mt {
     compatible = "zmk,behavior-hold-tap";
     label = "u_mt";
