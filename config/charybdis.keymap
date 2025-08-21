@@ -137,7 +137,7 @@ sll: sll {
                                        &none           &none         &trans
             >;
 
-            trackball-bindings = <&tmv_coarse>;
+            trackball-bindings = <&tmov_coarse>;
         };
 
         layer_1 {
@@ -196,7 +196,7 @@ sll: sll {
                                                        &none      &trans        &trans
             >;
 
-            trackball-bindings = <&tsl>;//滚轮层
+            trackball-bindings = <&tscroll>;//滚轮层
         };
 
         layer_7 {
@@ -209,7 +209,7 @@ sll: sll {
                                                  &none         &trans            &trans
             >;
 
-            trackball-bindings = <&tmv_fine>;//精准指针层
+            trackball-bindings = <&tmov_fine>;//精准指针层
         };
     };
 };
