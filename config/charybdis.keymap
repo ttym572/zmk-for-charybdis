@@ -26,6 +26,7 @@ u_mt: u_mt {
     global-quick-tap;             // 全局保护
     flavor = "tap-preferred";
     bindings = <&kp>, <&kp>;
+    retro-tap; //启用 retro-tap 功能
 };
 u_lt: u_lt {
     compatible = "zmk,behavior-hold-tap";
@@ -36,7 +37,7 @@ u_lt: u_lt {
     global-quick-tap;             // 全局保护
     flavor = "tap-preferred";
     bindings = <&mo>, <&kp>;      // 长按=层切换, 轻触=按键
-    retro-tap; // <-- 启用 retro-tap 功能
+    retro-tap; //启用 retro-tap 功能
 };
 sel_left: sel_left {
             compatible = "zmk,behavior-macro";
