@@ -202,10 +202,10 @@ sll: sll {
         };
         layer_6 {
             bindings = <
-&none       &none   &none  &none  &none  &none  &none   &none  &none  &none  &none  &none
-&none       &none   &none  &none  &none  &none  &none   &none  &none  &none  &none  &none
-&none       &none   &none  &none  &none  &none  &none   &none  &none  &none  &none  &none
-&kp LSHFT   &none   &none  &none  &F13   &none  &none   &none  &none  &none  &none  &none
+&none       &none   &none  &none  &none    &none  &none   &none  &none  &none  &none  &none
+&none       &none   &none  &none  &none    &none  &none   &none  &none  &none  &none  &none
+&none       &none   &none  &none  &none    &none  &none   &none  &none  &none  &none  &none
+&kp LSHFT   &none   &none  &none  &kp F13  &none  &none   &none  &none  &none  &none  &none
             &none         &none         &none        &none   &none  
             &none         &none         &none
             >;
