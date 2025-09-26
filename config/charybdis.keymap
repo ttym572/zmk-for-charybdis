@@ -197,7 +197,6 @@ sll: sll {
                                                        &none      &trans        &trans
             >;
 
-            trackball-bindings = <&tsl>;//滚轮层
         };
         layer_6 {
             bindings = <
@@ -222,7 +221,6 @@ sll: sll {
                                                  &none         &trans            &trans
             >;
 
-            trackball-bindings = <&tmv_fine>;//精准指针层
         };
     };
 };
