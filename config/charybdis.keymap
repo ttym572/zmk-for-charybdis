@@ -140,7 +140,6 @@ sll: sll {
                                        &none           &none         &trans
             >;
 
-            trackball-bindings = <&tmv_coarse>;//粗略指针层
         };
 
         layer_1 {
